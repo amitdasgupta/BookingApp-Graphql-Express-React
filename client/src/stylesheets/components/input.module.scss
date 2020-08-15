@@ -1,0 +1,76 @@
+@import "../abstracts/variables";
+.container {
+  position: relative;
+}
+
+.label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.input,
+.textarea {
+  padding: 0 10px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  width: 100%;
+  height: 40px;
+  color: #4c4c56;
+  border-radius: 3px;
+  border: 1px solid #805a5a;
+  transition: 250ms ease all;
+  &:focus {
+    box-shadow: rgba(67, 90, 111, 0.14) 0px 0px 2px inset,
+      rgb(87, 154, 217) 0px 0px 0px 1px inset,
+      rgba(16, 112, 202, 0.14) 0px 0px 0px 3px;
+    outline: none;
+  }
+}
+
+.hasError {
+  border-color: #eb5055;
+  &:focus {
+    border-color: #eb5055;
+  }
+}
+
+.readonly {
+  box-shadow: rgba(67, 90, 111, 0.14) 0px 0px 0px 1px inset;
+  background-color: rgb(245, 246, 247);
+  &:focus {
+    box-shadow: none;
+    cursor: no-drop;
+  }
+}
+
+.textarea {
+  line-height: 1.5em;
+  height: 100px;
+  padding: 10px;
+}
+
+.helperText {
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: capitalize;
+  letter-spacing: 0.3px;
+  display: block;
+  position: relative;
+  bottom: 30px;
+  color: #7cb342;
+}
+
+.error {
+  color: lighten($bright-red, 10%);
+}
+
+.isPlaceHolderImage {
+  padding-left: 30px;
+}
+
+.notSvg {
+  margin: 20px;
+  left: -20px;
+}

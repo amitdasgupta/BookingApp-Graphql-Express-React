@@ -1,0 +1,15 @@
+@import "../abstracts/variables";
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  margin: 30px auto;
+  font-size: 16px;
+  span {
+    width: 180px;
+    background-color: darken($mine-shaft, 5%);
+    height: 1px;
+  }
+}

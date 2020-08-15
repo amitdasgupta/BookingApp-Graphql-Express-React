@@ -1,0 +1,55 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  width: 400px;
+  height: 350px;
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+    align-self: flex-start;
+  }
+  .description {
+    width: 100%;
+    background-color: #ffd452;
+    height: 190px;
+    padding: 7px;
+  }
+
+  margin: 10px 25px;
+  padding: 10px;
+  .details {
+    width: 100%;
+    display: flex;
+    margin: 5px 0;
+    justify-content: space-between;
+    align-items: center;
+    .bookButton {
+      background-color: #f74141;
+      color: white;
+      padding: 2px 20px;
+      border-radius: 4px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .isPurchased {
+      &:hover {
+        cursor: no-drop;
+      }
+    }
+    div:first-child {
+      font-weight: bold;
+    }
+    .price {
+      font-weight: bold;
+      color: green;
+    }
+  }
+  .author {
+    align-self: flex-start;
+    font-weight: bold;
+  }
+}

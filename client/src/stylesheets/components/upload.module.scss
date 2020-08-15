@@ -1,0 +1,37 @@
+@import "../abstracts/variables";
+.label {
+  border: 1px solid;
+  color: #8bc34a;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.input {
+  display: none;
+}
+
+.uploadButtonWrapper {
+  display: inline-flex;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.readonly {
+  color: #eee !important;
+  cursor: no-drop;
+}
+
+.helperText {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.error {
+  color: lighten($bright-red, 10%);
+}

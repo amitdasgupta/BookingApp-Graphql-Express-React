@@ -1,0 +1,22 @@
+.LoginForm {
+  width: 800px;
+  margin: 110px auto;
+  background-color: $brand-color;
+  padding: 5px 110px;
+  border-radius: 20px;
+  padding-bottom: 50px;
+  .login-button {
+    width: 100px;
+    margin: auto;
+  }
+  .loginMessage {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: -15px;
+  }
+}
+
+.error {
+  color: #e6001b;
+}
