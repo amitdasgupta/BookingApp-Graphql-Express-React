@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import { ApolloProvider } from "@apollo/client";
 import client from "./appolo";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -9,9 +9,9 @@ import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <ApolloProvider client={client}>
-    <BrowserRouter>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </ApolloProvider>,
   document.getElementById("root")
 );
