@@ -29,7 +29,7 @@ module.exports = {
       const booking = await bookingObj.save();
       return transFormBooking(booking);
     } catch (error) {
-      console.log(error);
+      console.log(`Error:${error}`);
       throw error;
     }
   },
